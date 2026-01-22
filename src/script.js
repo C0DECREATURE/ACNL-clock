@@ -4,7 +4,7 @@ const ACNLclock = {
 	// set up the clock
 	init: ()=> {
 		// insert the style sheet
-		ACNLclock.src = document.getElementById('ACNLclock-script').src.replace('ACNLclock/script.js','');
+		ACNLclock.src = document.getElementById('ACNLclock-script').src.replace('/ACNLclock/script.js','');
 		let css = document.createElement('link');
 		css.rel = 'stylesheet';
 		css.type = 'text/css';
