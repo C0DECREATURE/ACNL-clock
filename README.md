@@ -1,6 +1,6 @@
 ## Simple ACNL Clock Widget
 
-![Clock Preview]()
+![Clock Preview](https://github.com/C0DECREATURE/ACNL-clock/blob/main/preview.jpg)
 
 A simple Javascript and CSS clock in the style of Animal Crossing: New Leaf.
 
