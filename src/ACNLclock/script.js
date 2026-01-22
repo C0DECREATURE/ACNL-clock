@@ -4,12 +4,12 @@ const ACNLclock = {
 	// set up the clock
 	init: ()=> {
 		// insert the style sheet
-		ACNLclock.src = document.getElementById('ACNLclock-script').src.replace('/ACNLclock/script.js','');
+		ACNLclock.src = document.getElementById('ACNLclock-script').src.replace('/ACNLclock/script.min.js','');
 		let css = document.createElement('link');
 		css.rel = 'stylesheet';
 		css.type = 'text/css';
-		css.href = `${ACNLclock.src}/ACNLclock/style.css`;
-		document.querySelector('HEAD').appendChild(css);
+		css.href = `${ACNLclock.src}/ACNLclock/style.min.css`;
+		document.getElementById('ACNLclock-script').after(css);
 		// get the element that holds the clock and insert content
 		let clockbox = document.getElementById('ACNLclock');
 		clockbox.innerHTML = `
