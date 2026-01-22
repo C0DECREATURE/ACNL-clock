@@ -8,7 +8,7 @@ A simple Javascript and CSS clock in the style of Animal Crossing: New Leaf.
 
 2. Put the ACNLclock folder anywhere on your website.
 
-3. Add this line in the header of your HTML file, replacing "pathname" with the path to where you put the folder:
+3. Add this line in the header of your HTML file, replacing "pathname" with the path where you put the folder:
 
 ``` html
 <script id="ACNLclock-script" src="pathname/ACNLclock/script.min.js"></script>
