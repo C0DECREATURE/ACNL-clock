@@ -131,17 +131,17 @@
     </clipPath>
     <clipPath
        clipPathUnits="userSpaceOnUse"
-       id="clipPath5">
+       id="clipPath1">
       <path
          style="fill:#e3c890;fill-opacity:1;stroke:none;stroke-width:6.05835;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:1;stroke-opacity:1;paint-order:fill markers stroke"
-         id="path6"
+         id="path5"
          width="31.016951"
          height="23.050848"
          x="66.779663"
          y="187.11864"
          inkscape:path-effect="#path-effect21"
          sodipodi:type="rect"
-         d="m 66.779663,187.11864 h 31.016951 v 23.05085 H 66.779663 Z"
+         d="m 78.650167,187.11864 h 7.275943 a 11.870504,11.870504 45 0 1 11.870504,11.8705 11.530589,11.530589 136.71497 0 1 -11.870504,11.18035 H 78.650167 A 11.870504,11.870504 45 0 1 66.779663,198.29898 11.530589,11.530589 136.71497 0 1 78.650167,187.11864 Z"
          transform="matrix(0.8584906,0,0,1.0245924,7.9868886,-6.9272295)"
          inkscape:label="day" />
     </clipPath>
@@ -163,7 +163,7 @@
      inkscape:window-x="-6"
      inkscape:window-y="-6"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg1" />
+     inkscape:current-layer="layer2" />
   <g
      inkscape:groupmode="layer"
      id="layer2"
@@ -237,7 +237,7 @@
        inkscape:path-effect="#path-effect19"
        inkscape:original-d="m 67.072276,187.02985 30.578032,-0.6215 0.146306,23.76114 H 66.779663 Z"
        inkscape:label="day light"
-       clip-path="url(#clipPath5)"
+       clip-path="url(#clipPath1)"
        sodipodi:nodetypes="ccccc" />
   </g>
 </svg>
