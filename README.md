@@ -1,8 +1,8 @@
-##Simple ACNL Clock Widget
+## Simple ACNL Clock Widget
 
 A simple Javascript and CSS clock in the style of Animal Crossing: New Leaf.
 
-##Instructions for use:
+## Instructions
 
 1. Download the files.
 
