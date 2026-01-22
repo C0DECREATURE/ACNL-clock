@@ -38,7 +38,7 @@ To style the individual clock elements, you can either modify the source code di
 #ACNLclock {
 	.date { /* Styling for the month and day section */ }
 	.month { /* Styling for the month only */ }
-	.month { /* Styling for the day only */ }
+	.day { /* Styling for the day only */ }
 	.weekday { /* Styling for the day of the week */ }
 	.time { /* Styling for the hour and minute section */ }
 	.hour { /* Styling for the hour only */ }
