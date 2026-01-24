@@ -14,7 +14,8 @@ const ACNLclock = {
 		let clockbox = document.getElementById('ACNLclock');
 		clockbox.innerHTML = `
 			<img src="${ACNLclock.src}/ACNLclock/acnl_clock.svg" alt="">
-			<div class="date"><div class="month">0</div><span>/</span><div class="day">0</div></div>
+			<div class="date"><div class="month
+			">0</div><span>/</span><div class="day">0</div></div>
 			<div class="weekday"></div>
 			<div class="time"><div class="hour">0</div><span>:</span><div class="minute">00</div></div>
 			<div class="ampm"></div>
@@ -26,10 +27,13 @@ const ACNLclock = {
 		ACNLclock.minutebox = clockbox.querySelector('.minute');
 		weekdaybox = clockbox.querySelector('.weekday');
 		ACNLclock.ampmbox = clockbox.querySelector('.ampm');
+		
+		// initial clock update
 		ACNLclock.update();
 	},
 	// update the clock time to the current time
 	update: ()=>{
+		console.log('Updating clock');
 		let date = new Date();
 		ACNLclock.monthbox.innerHTML = date.getMonth() + 1;
 		ACNLclock.daybox.innerHTML = date.getDate();
@@ -44,4 +48,16 @@ const ACNLclock = {
 	dayNames: [ 'Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa' ]
 }
 
-window.addEventListener('load', ()=>{ ACNLclock.init(); });
+window.addEventListener('load', ()=>{
+	// set up the clock
+	ACNLclock.init();
+	// get the number of milliseconds until start of next minute
+	let date = new Date();
+	let msToUpdate = (60 - date.getSeconds()) * 1000;
+	// update the clock when the next minute starts
+	// then, update the clock every 60 seconds
+	setTimeout(()=>{
+		ACNLclock.update();
+		setInterval(ACNLclock.update, 60000);
+	}, msToUpdate);
+});
