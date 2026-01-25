@@ -39,7 +39,8 @@ const ACNLclock = {
 		ACNLclock.daybox.innerHTML = date.getDate();
 		weekdaybox.innerHTML = ACNLclock.dayNames[date.getDay()];
 		let hours = date.getHours();
-		ACNLclock.hourbox.innerHTML = hours >= 12 ? hours - 12 : hours;
+		if (hours == 0) hours = 12; // convert midnight from 0 to 12
+		ACNLclock.hourbox.innerHTML = hours > 12 ? hours - 12 : hours; // convert to 12 hour format
 		let minutes = date.getMinutes().toString();
 		ACNLclock.minutebox.innerHTML = minutes.length < 2 ? '0' + minutes : minutes;
 		ACNLclock.ampmbox.innerHTML = date.getHours() >= 12 ? 'pm' : 'am';
